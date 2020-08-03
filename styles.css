@@ -33,7 +33,7 @@ html {
 }
 
 .parallax2{
-    background-image: url('img/parallaximg2.jpg');
+    background-image: url('img/parallaximg2.png');
     min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
