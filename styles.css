@@ -23,9 +23,22 @@ html {
     margin-top: 100px;
 }
 
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
+.parallax {
+    background-image: url('img/parallaximg.png');
+
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll; 
 }
 
 #about {
