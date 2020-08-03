@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    tex
 }
 
 html {
@@ -36,9 +37,12 @@ html {
     background-size: cover;
 }
 
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (min-width: 321px) {
     .parallax {
-      background-attachment: scroll; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 #about {
@@ -216,5 +220,3 @@ html {
 #check {
     display: none;
 }
-
-    
