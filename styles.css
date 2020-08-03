@@ -39,7 +39,16 @@ html {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px;){
     .parallax {
-      background-attachment: scroll;
+        background-image: url("img/parallaximg.png");
+  
+        /* Set a specific height */
+        min-height: 500px; 
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
   }
 #about {
