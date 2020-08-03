@@ -26,7 +26,7 @@ html {
 .parallax {
     background: url("img/parallaximg.png") repeat fixed 100%;
     height: 500px;
-    background-position: center;
+    background-position: top;
 }
 
 #about {
