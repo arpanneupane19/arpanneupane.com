@@ -37,7 +37,7 @@ html {
     background-size: cover;
 }
 
-@media only screen and (min-width: 321px) {
+@media (min-width: 321px) {
     .parallax {
         background-attachment: fixed;
         background-position: center;
