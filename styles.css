@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    tex
 }
 
 html {
@@ -25,10 +24,11 @@ html {
 }
 
 .parallax {
-    background-image: url(img/parallaximg.png);
-
-    /* Full height */
-    height: 500px; 
+    /* The image used */
+    background-image: url("img/parallaximg.png");
+  
+    /* Set a specific height */
+    min-height: 500px; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -37,8 +37,11 @@ html {
     background-size: cover;
 }
 
-
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px;){
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
 #about {
     height: 1200px;
     display: inline-block;
