@@ -23,11 +23,7 @@ html {
     margin-top: 100px;
 }
 
-.parallax {
-    background: url("img/parallaximg.png") repeat fixed 100%;
-    height: 600px;
-    background-position: top;
-}
+
 
 #about {
     height: 1200px;
