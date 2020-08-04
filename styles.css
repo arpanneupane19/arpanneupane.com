@@ -23,7 +23,15 @@ html {
     margin-top: 100px;
 }
 
-
+.parallax {
+    background-image: url(img/parallaximg.png);
+    padding: 100px;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 #about {
     height: 1200px;
@@ -200,4 +208,3 @@ html {
 #check {
     display: none;
 }
-
