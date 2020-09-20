@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans';
 }
 
 html {
@@ -8,215 +9,146 @@ html {
 }
 
 
-
-#home {
-    height: 1200px;
-    background: white;
-    color: black;
-    display: inline-block;
-    width: 100%;
+.home {
     text-align: center;
-
+    margin-top: 100px;
+    height: 1200px;
+    background: url('img/bg1.jpg');
+    background-repeat: no-repeat;
+    color: black;
 }
 
-#home h1 {
+.home .header{
+    text-align: center;
     margin-top: 100px;
 }
 
-.parallax {
-    background-image: url(img/parallaximg.png);
-    padding: 100px;
-    height: 300px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-@media screen and (max-height: 800px) {
-    .parallax {
-        background-image: url(img/parallaximg.png);
-        padding: 100px;
-        height: 800px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.home a {
+    margin-top: 10px;
 }
 
 #about {
-    height: 1200px;
-    display: inline-block;
-    background: white;
-    width: 100%;
-    color: black;
-    text-align: center;
-}
-
-.btn{
+    height: 1248px;
+    background-color: white;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    animation: about 2s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
     color: white;
-    background: black;
-    border: 2px solid white;
 }
 
-.btn:hover{
-    color: black;
-    background: white;
-    border: 2px solid black;
-}
+@keyframes about {
+    from {top: 0px;}
+    to {top: 200px; color: black;}
+  }
+
 
 
 #skills {
-    height: 1200px;
-    background: black;
-    color: white;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
-
-
-#projects {
-    height: 1200px;
-    background: white;
-    display: inline-block;
+    height: 700px;
+    background: url('img/bg3.jpg');
     color: black;
     text-align: center;
-    width: 100%;
 }
 
-#games {
-    height: 1200px;
-    background: black;
-    display: inline-block;
-    color: white;
+#skills #python{
+    color:rgb(0, 179, 0);
+
+}
+
+#skills #htmlcss{
+    color: rgb(0, 179, 0);
+
+}
+
+#skills #js{
+    color: orange;
+
+}
+
+#skills #flask{
+    color:rgb(0, 179, 0);
+
+}
+
+#skills #pygame{
+    color:rgb(0, 179, 0);
+
+}
+
+#skills #bootstrap{
+    color:rgb(0, 179, 0);
+
+}
+
+.projects {
     text-align: center;
-    width: 100%;
-}
-
-#contact {
-    height: 1200px;
-    background: white;
-    color: black;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
-
-.social {
-    margin-left: 10px;
-    text-align: center;
-}
-
-.social a{
-    color: black;
-    font-size: 50px;
-    padding: 10px;
-}
-
-.fa-facebook-square {
-    color: #4267B2;
-}
-
-.fa-instagram-square{
-    color: rgb(0, 143, 143);
-}
-
-.fa-snapchat-square{
-    color: #eeea02;
-}
-
-.fa-envelope{
-    color: black;
-}
-
-.fa-facebook-square:hover, .fa-instagram-square:hover, .fa-snapchat-square:hover, .fa-envelope:hover{
-    color: rgb(87, 87, 87);
-}
-
-
-#skills p{
-    text-align: center;
-
-}
-
-
-#skills p{
-    font-size: larger;
-}
-
-#skills #python:hover{
-    color: rgb(0, 132, 255);
-    transition: .3s;
-}
-
-#skills #pygame:hover{
-    color: rgb(0, 132, 255);
-    transition: .3s;
-}
-
-#skills #tkinter:hover{
-    color: rgb(0, 204, 0);
-    transition: .3s;
-}
-
-#skills #js:hover{
-    color: rgb(255, 187, 0);
-    transition: .3s;
-}
-
-
-#skills #html:hover{
-    color: rgb(0, 204, 0);
-    transition: .3s;
-}
-
-#skills #css:hover{
-    color: rgb(0, 204, 0);
-    transition: .3s;
-}
-
-#skills #bootstrap:hover{
-    color: rgb(0, 204, 0);
-    transition: .3s;
-}
-
-#about h1 {
     margin-top: 100px;
-    text-align: center;
-}
-
-#skills h1 {
-    margin-top: 90px;
-    text-align: center;
-}
-
-#projects h1 {
-    margin-top: 90px;
-    text-align: center;
-}
-
-#games h1 {
-    margin-top: 90px;
-    text-align: center;
-}
-
-
-#contact h1 {
-    margin-top: 90px;
-    text-align: center;
-}
-
-.checkbtn {
-    font-size: 30px;
+    height: 800px;
+    background: url('img/bg4.jpg');
+    background-size: 1400px 800px;
+    background-repeat: no-repeat;
+    animation: proj 2s;
+    animation-fill-mode: forwards;
     color: white;
-    float: right;
-    margin-top: 10px;
-    margin-right: 40px;
-    display: none;
 }
 
-#check {
-    display: none;
+@keyframes proj {
+    from {top: 0px;}
+    to {top: 200px; color: black;}
+  }
+
+.projects .header{
+    text-align: center;
+}
+
+.projects .app{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.contact{
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+.contact .ig{
+    color: black;
+    margin-right: 10px;
+}
+
+.contact .ig:hover{
+    color: black;
+    margin-right: 10px;
+    font-size: xx-large;
+    transition: .3s;
+}
+
+.contact .email{
+    color: black;
+    margin-right: 10px;
+}
+
+.contact .email:hover{
+    color: black;
+    margin-right: 10px;
+    font-size: xx-large;
+    transition: .3s;
+}
+
+.contact .github{
+    color: black;
+}
+
+.contact .github:hover{
+    color: black;
+    margin-right: 10px;
+    font-size: xx-large;
+    transition: .3s;
 }
